@@ -1,0 +1,1 @@
+require 'evil_spambots'
