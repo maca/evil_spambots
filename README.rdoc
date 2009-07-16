@@ -4,6 +4,8 @@ Obfuscate an email address so hopefully won't be harvested by evil spambots usin
 
 == DESCRIPTION
 
+Works with Rails by adding obfuscate_email and html_obfuscate view helper methods alltough is framework agnostic.
+
     require 'evil_spambots'
     EvilSpambots.obfuscate_email('mail@example.com')
 
@@ -22,17 +24,21 @@ Will return:
      //-->
     </script>
 
-Wich will in turn be rendered correctly with a browser with or without JavaScript
+Which will be rendered correctly with a browser with or without JavaScript
 
 Options for obfuscate_email:
 * linktext: +String+
  The link inside the tag, defaults to the email address
 * degradable: +true+ or +false+
- It true will html that renders correctly if the browser hasn't got JavaScript enabled.
+ If true will generate html that renders correctly if the browser hasn't got JavaScript enabled. Defaults to true.
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+Can be installed as a Rails Plugin or as a gem.
+
+  sudo gem install maca-evil_spambots –source http://gems.github.com
+
+Or follow standard Rails installation
 
 == LICENSE:
 
