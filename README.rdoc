@@ -28,9 +28,9 @@ Which will be rendered correctly with a browser with or without JavaScript
 
 Options for obfuscate_email:
 * linktext: +String+
- The link inside the tag, defaults to the email address
+The link inside the tag, defaults to the email address
 * degradable: +true+ or +false+
- If true will generate html that renders correctly if the browser hasn't got JavaScript enabled. Defaults to true.
+If true will generate html that renders correctly if the browser hasn't got JavaScript enabled. Defaults to true.
 
 == INSTALL:
 
